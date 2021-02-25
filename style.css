@@ -120,7 +120,7 @@ a {
     color: #fff;
     padding: 10px;
     border-radius: 10px;
-    font-family: 'Merienda', cursive;
+    font-family: 'Space Mono', monospace;
     display: inline;
 }
 
@@ -157,7 +157,7 @@ main {
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family: 'Merienda', cursive;
+	font-family: 'Kaushan Script', cursive;
 	font-size:19px;
 	font-weight:bold;
 	padding:9px 24px;
