@@ -20,6 +20,34 @@
 font-family: "Space Mono", monospace;"
     font-size: 10pt;
     }
+    body{
+      -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+          animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
     @media screen and (max-width: 800px) {
     .body {
     width: 100%;
@@ -52,6 +80,8 @@ font-family: "Space Mono", monospace;"
     }
     }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merienda&display=swap" rel="stylesheet">
+    
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v7.0"></script>
     <link rel="stylesheet" href="css/icomoon.css">
@@ -65,7 +95,7 @@ font-family: "Space Mono", monospace;"
           <img src="images/icon.png" class="muter" style="width:30px;height:30px;margin-right: 10px;" alt=""><span
           style="color:white;padding:5px;font-size: 11pt;font-family: "Space Mono", monospace;">Hi, There..</span>
           <h2 style="text-decoration:underline;text-decoration-style:wavy;text-decoration-color:hotpink;let
-          ter-spacing:2px;color:white;font-weight: bolder;font-family: "Space Mono", monospace;">Annisa Puspitasari
+          ter-spacing:2px;color:white;font-weight: bolder;font-family: 'Kaushan Script', cursive;">Annisa Puspitasari
           </h2>
           <a
 style="color:white;background:#9d03fc;padding: 5px;font-family: monospace;font-size: 9pt;text-decoration: none;">Web Designer from Bandung, Indonesian</a><br><br>
@@ -101,8 +131,8 @@ style="color:white;background:#9d03fc;padding: 5px;font-family: monospace;font-s
           -webkit-box-shadow: 10px 10px 42px 0px rgba(0,0,0,0.75);
           -moz-box-shadow: 10px 10px 42px 0px rgba(0,0,0,0.75);color:white;border-left:10px solid #9d03fc;padding-right:20px;padding-left:20px;text-align: left;margin-top:
           -40px">
-          ~ <a href="../index.html" style="color:white">Home</a>
-          / <a href="../art/index.html" style="color:white;text-decoration: underline;">Character design</a> <br><br>
+          ~ <a href="../index.html" style="font-family: 'Kaushan Script', cursive;color:white">Home</a>
+          / <a href="../art/index.html" style="font-family: 'Kaushan Script', cursive;color:white;text-decoration: underline;">Character design</a> <br><br>
           
           <img style="width: 200px;height:auto;" class="img-fluid" src="https://res.cloudinary.com/codelifings/image/upload/v1585726690/a_zftq8g.png">
           <img style="width: 200px;height:auto;" class="img-fluid" src="https://res.cloudinary.com/nisacodelifings/image/upload/v1598083774/Screenshot_42_htjgin.png">
