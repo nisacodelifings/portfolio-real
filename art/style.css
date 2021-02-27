@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+body {
+    font-family: "Space Mono", monospace;
+    background: indigo;
+    display: flex;
+    justify-content: center;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.header {
+    text-align: center;
+}
+
+.icon {
+    width: 50px;
+    animation-name: rotate-center;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+h1,
+p,
+h3,
+li,
+a {
+    color: white;
+}
+
+h1 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+p {
+    font-family: 'Space Mono', monospace;
+}
+
+h3 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+::selection {
+    background: #9d03fc;
+}
+
+.name {
+    letter-spacing: 2px;
+    letter-spacing: 1.5px;
+    font-size: 2.5em;
+}
+
+.slug {
+    background: #9d03fc;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Kaushan Script', cursive;
+    display: inline;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 400px 400px;
+}
+
+main .col {
+    padding: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 200px auto;
+}
+
+main {
+    margin: 20px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    background: #4A00E0;
+    /* fallback for old browsers */
+    border-radius: 50px;
+    border-left: 20px solid #9d03fc;
+    border-right: 20px solid #9d03fc;
+}
+
+.hire {
+    box-shadow: inset 0px 1px 0px -29px #e184f3;
+    background: linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
+    background-color: #c123de;
+    border-radius: 17px;
+    border: 2px solid #a511c0;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Space Mono', monospace;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 9px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #9b14b3;
+}
+
+.hire:hover {
+    background: linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+    background-color: #a20dbd;
+}
+
+.hire:active {
+    position: relative;
+    top: 1px;
+}
+
+.footer {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 10px;
+        grid-template-columns: 300px 300px;
+    }
+
+    main .col {
+        padding: 10px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    main {
+        grid-template-columns: 300px;
+    }
+
+    main .col {
+        padding: 5px;
+    }
+
+    .slug {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .name {
+        font-size: 2em;
+    }
+
+    main {
+        grid-template-columns: 230px;
+    }
+
+    main .col {
+        padding: 5px;
+    }
+
+    .slug {
+        font-size: 1em;
+    }
+
+    .hire {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .name {
+        font-size: 1.5em;
+    }
+
+    main {
+        grid-template-columns: 230px;
+        margin-top: -30px;
+    }
+
+    main .col {
+        padding: 5px;
+        font-size: 0.7em;
+    }
+
+    .slug {
+        font-size: 0.8em;
+    }
+
+    .hire {
+        font-size: 0.8em;
+    }
+
+    .footer {
+        font-size: 0.8em;
+    }
+
+    .footer img {
+        width: 30px;
+    }
+}
+
+.col-img {
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    padding: 20px;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+.col-img img {
+    border-radius: 50%;
+}
