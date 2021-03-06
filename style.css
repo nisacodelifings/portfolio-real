@@ -82,6 +82,7 @@ p {
 
 h3 {
     font-family: 'Kaushan Script', cursive;
+    letter-spacing: 2px;
 }
 
 a {
@@ -95,7 +96,6 @@ a {
 
 .name {
     letter-spacing: 2px;
-    letter-spacing: 1.5px;
     font-size: 2.5em;
 }
 
