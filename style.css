@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 
-a {
+.stack a, li a, i {
     text-decoration: underline;
 }
 body {
