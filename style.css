@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 
 .stack a, li a, i {
-    text-decoration: underline;
+    border-bottom: 1px solid white;
 }
 body {
     font-family: "Space Mono", monospace;
