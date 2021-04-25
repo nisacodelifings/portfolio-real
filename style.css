@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 
-.stack a, a, i {
+.stack a, .col a, i {
     border-bottom: 1px solid white;
 }
 body {
