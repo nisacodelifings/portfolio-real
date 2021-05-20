@@ -1,15 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
 
 *{
   font-family: 'Itim', cursive;
 }
 body{
-  background-color: #8ee3c8;
+  background-color: #111827;
+  color: #e9fac8;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.text {
+  background: linear-gradient(90deg, rgb(236, 72, 153), rgb(239, 68, 68), rgb(245, 158, 11));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Pattaya', sans-serif;
+  font-size: 35pt;
+  letter-spacing: 1px;
 }
 p{
-  font-size: 17px;
+  font-size: 25px;
 }
 
 .container{
@@ -40,7 +52,6 @@ p{
 
 b, a{
   color: rgb(251,33,117);
-  font-weight: 900;
 }
 
 /* 11 */
@@ -50,7 +61,9 @@ b, a{
     background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
     color: #fff;
     overflow: hidden;
+    font-size: 15px;
 }
+
 .btn-11:hover {
     text-decoration: none;
     color: #fff;
