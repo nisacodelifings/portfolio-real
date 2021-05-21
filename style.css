@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 
-.stack a, li a, i {
-    border-bottom: 1px solid white;
-}
+
 body {
     font-family: "Space Mono", monospace;
     background: indigo;
@@ -11,7 +9,6 @@ body {
     -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
     animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
-ul li { list-style: none;}
 @-webkit-keyframes text-focus-in {
     0% {
         -webkit-filter: blur(12px);
@@ -112,17 +109,9 @@ a {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 400px 400px;
-}
-
-main .col {
-    padding: 50px;
-}
-
-.container {
-    display: grid;
-    grid-template-rows: 200px auto;
+    text-align: center;
+color: white;
+padding: 2em;
 }
 
 main {
@@ -136,6 +125,11 @@ main {
     border-left: 20px solid #9d03fc;
 }
 
+.dekstop{
+    margin-top: 7em;
+}
+
+
 .hire {
     box-shadow: inset 0px 1px 0px -29px #e184f3;
     background: linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
@@ -145,7 +139,7 @@ main {
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Space Mono', monocontspace;
     font-size: 19px;
     font-weight: bold;
     padding: 9px 24px;
@@ -165,18 +159,6 @@ main {
 
 .footer {
     text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-    main {
-        padding: 10px;
-        grid-template-columns: 300px 300px;
-    }
-
-    main .col {
-        padding: 10px;
-        justify-content: center;
-    }
 }
 
 @media screen and (max-width: 425px) {
