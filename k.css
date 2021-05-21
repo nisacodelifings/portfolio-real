@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
 *{
-  font-family: 'Itim', cursive;
+  font-family: "Space Grotesk", sans-serif;
 }
 body{
   background-color: #111827;
@@ -11,17 +12,25 @@ body{
   justify-content: center;
   align-items: center;
 }
+.hm{
+  width: 35em;
+}
+
+.link a{
+  margin-right: 1em;
+}
 
 .text {
-  background: linear-gradient(90deg, rgb(236, 72, 153), rgb(239, 68, 68), rgb(245, 158, 11));
+  background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Pattaya', sans-serif;
-  font-size: 35pt;
+  font-size: 30pt;
   letter-spacing: 1px;
 }
 p{
-  font-size: 25px;
+  font-family: "inter", sans-serif;
+  letter-spacing: 1px;
+  font-size: 15px;
 }
 
 .container{
@@ -50,18 +59,50 @@ p{
 }
 
 
-b, a{
-  color: rgb(251,33,117);
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: rgb(251,33,117);
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
 }
 
 /* 11 */
 .btn-11 {
   border: none;
+  margin-top: 2em;
   background: rgb(251,33,117);
     background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
     color: #fff;
     overflow: hidden;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .btn-11:hover {
