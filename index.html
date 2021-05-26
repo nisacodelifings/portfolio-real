@@ -12,31 +12,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merienda&display=swap" rel="stylesheet">
     <!-- icon -->
     <link rel="icon" href="images/icon.png">
-    <style>
-        .youtube-responsive-container {
-position:relative;
-padding-bottom:56.25%;
-padding-top:30px;
-height:0;
-overflow:hidden;
-}
-.youtube-responsive-container iframe, .youtube-responsive-container object, .youtube-responsive-container embed {
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-}
-    .muter {
-animation-name: rotate-center;
+   <style>
+	@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Trispace:wght@300&display=swap');
+	:root{
+		--main-color: #4B0082;
+		--sec-color: #9d03fc;
+	}
+	body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: var(--main-color);
+		font-family: 'Trispace', sans-serif;
+		color: white;
+		padding: 1em;
+	}
+	.container{
+		text-align: center;
+	}
+	.title{
+		font-family: 'Kaushan Script', cursive;
+	}
+	main{
+		width: 320px;
+		padding: 2em;
+		background: #8E2DE2;text-align: center;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+box-shadow: 10px 10px 42px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 42px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 42px 0px rgba(0,0,0,0.75);
+border-radius: 50px;
+border-left: 1em solid var(--sec-color);
+margin-top: 2em;
+	}
+	.logo{
+		width: 50px;
+		animation-name: putar;
 animation-duration: 2s;
 animation-timing-function: ease;
 animation-delay: 0.5s;
 animation-iteration-count: infinite;
 animation-direction: normal;
 animation-fill-mode: none;
-}
-@keyframes rotate-center {
+	}
+@keyframes putar {
 0% {
 -webkit-transform: rotate(0);
 transform: rotate(0);
@@ -46,127 +66,100 @@ transform: rotate(0);
 transform: rotate(360deg);
 }
 }
-@media screen and (min-width: 768px) {
-     .hp{
-        display: none;
-     }
-    }
-    @media screen and (max-width: 767px) {
-      .dekstop{
-        display: none;
-
-      }
-    /*}*/
-
+svg{
+	width: 1em;
+	color: white;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+p{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	font-size: 10pt;
+}
+.link{
+	border-bottom: 1px dotted #8EE3C8;
+}
+.link:hover{
+	background: #8EE3C8;
+	color: #4545CC
+}
+a{
+	color: white;
+	text-decoration: none;
+	font-size: 10pt;
+}
+main *{
+	text-align: left;
+}
+.cs{
+	display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(1, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+.cs-1{
+	grid-area: 1 / 1 / 2 / 2;
+}
+.cs-2{
+	grid-area: 1 / 2 / 2 / 3;
+}
+img{
+	width: 150px;
+}
+hr{
+	border-top: 1px dotted #ff00aa;
+}
 </style>
-</head>
-
 <body>
-     <div class="body" style="font-size: 9pt;">
-         <div class="hp">
-             <div style="margin-top: 50px;margin-left: 20px">
-          <img src="images/icon.png" class="muter" style="width:30px;height:30px;margin-right: 5px;" alt="">
-          <span style="color:white;padding:5px;font-size: 11pt;font-family: Space Mono, monospace;">Hi, There..</span>
-          <h1 style="letter-spacing:2px;color:white;font-weight: bolder;font-family: 'Kaushan Script', cursive;font-size: 2.7em;margin: 0px;margin-bottom:5px;margin-top: -5px">Nisa Codelifings!
-          </h1>
-          <a
-style="color:white;background:#9d03fc;padding: 5px;font-family: monospace;font-size: 9pt;text-decoration: none;border-radius: 50px;padding: 5px;">(Annisa Puspitasari)</a><br><br><br>
-          <style>
-          .menu-link {
-          margin-right: 20px;
-          font-size: 9pt;
-          }
-          .menu-link:hover {
-          text-decoration: underline;
-          text-decoration-color: hotpink;
-          }
-          .menu-link:active,
-          .menu-link-active {
-          text-decoration: underline;
-          text-decoration-color: hotpink;
-          text-decoration-style: wavy;
-          }
-          .menu-link-active {
-          margin-right: 20px;
-          font-size: 9pt
-          ;
-          }
-          @media screen and (max-width: 320px) {
-              body{
-                margin-left: 40px;
-              }
-              .con{
-                width: 250px;
-              }
-          }
-              a:hover{
-                  background: #BC20D9;
-              }
-        
-          </style>
-        </div>
-        <br>
-        <br>
-        <br>
-        <div id="contact" style="background: #8E2DE2;  /* fallback for old browsers */
-          background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-          background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-          padding: 20px;border-radius: 50px;width: 300px;margin-bottom: 50px;box-shadow: 10px 10px 42px 0px rgba(0,0,0,0.75);
-          -webkit-box-shadow: 10px 10px 42px 0px rgba(0,0,0,0.75);
-          -moz-box-shadow: 10px 10px 42px 0px rgba(0,0,0,0.75);color:white;border-left:10px solid #9d03fc;padding-right:20px;padding-left:20px;text-align: left;margin-top:
-          -40px">
-          <a href="index.html" style="font-family: 'Kaushan Script', cursive;color:white;border-bottom: 2px solid hotpink">Home</a>
-          . <a href="art/index.html" style="font-family: 'Kaushan Script', cursive;color:white;">Character design</a> . <a href="kode/index.html" style="font-family: 'Kaushan Script', cursive;color:white;">Web Design</a><br><br>
-          
-          <div class="con">
-           <p>UI Developer based in bandung, Indonesia. Love researching UI Design. Skilled in HTML, CSS and Javascript stuff.</p>
-                <a href="https://wa.me/6289508320163">Available for hire/</a>
-            </div>
-          
-            
-                <h3>Portfolio</h3>
-                <ul>
-                  <li><a href="http://makeatoon.glitch.me/">Make A Toon</a></li>
-<li> <a href="https://cuddly-chainsaw-pi.vercel.app/">Pitakon</a></li>
-<li><a href="https://bluetheme.vercel.app/">Blue Theme</a></li>
-<li><a href="https://csb-fyv8c.netlify.app/">Codelifings</a></li>
-<li>  <a href="https://dzikircounter.vercel.app/">Dzikir Counter</a></li>
-<li> <a href="https://ajkprinting.vercel.app/">AJK
-                            Printing</a> </li>
-                </ul>
-          
-                  
-                <div class="stack">
-                    <a href="https://github.com/nisacodelifings">Github/</a>
-                    <a href="https://www.instagram.com/annisa_pussa/">Instagram/</a>
-                    <br>
-                    <a href="https://twitter.com/annisa_pussa">Twitter/</a>
-                    <a href="https://www.linkedin.com/in/annisapussa/">Linkedin/</a>
-                    </div>
-          </div>
-        </div>
-
-    <div class="container dekstop">
-        <div class="header">
-            <img class="icon" src="images/icon.png" alt="logo">
-
-                <h1 class="name">Nisa Codelifings!</h1>
-                <p>UI Developer based in Bandung, Indonesia</p>
-        </div>
-        <main style="background: #8E2DE2;text-align: center;  /* fallback for old browsers */
-          background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
-          background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-          box-shadow: 10px 10px 42px 0px rgba(0,0,0,0.75);
-          -webkit-box-shadow: 10px 10px 42px 0px rgba(0,0,0,0.75);
-          -moz-box-shadow: 10px 10px 42px 0px rgba(0,0,0,0.75);text-align: center">
-         Love researching UI Design. Skilled in HTML, CSS and Javascript stuff. <br> Follow My <a href="https://www.linkedin.com/in/annisapussa/">Linkedin</a>/, <a href="https://www.instagram.com/annisa_pussa/?hl=id">Instagram</a>/ and <a href="https://github.com/nisacodelifings">Github</a>/
-        </main>
-        <div class="footer"><br>
-                <a href="https://wa.me/6289508320163" class="hire">Hire me</a><br><br><br>
-
-            <p>&copy; nisacodelifings 2018</p>
-        </div>
-    </div>
+	<div class="container">
+		<img src="https://res.cloudinary.com/nisacodelifings/image/upload/v1622003349/icon_k7ydvk.png" class="logo" alt="">
+		<h1 class="title">Nisa Codelifings!</h1>
+		<p>UI Developer based in Bandung, Indonesia</p>
+		<main>
+			<p>Hello, There. My name is Annisa Puspitasari. I do CSS User Interfaces and Interested in these stuff..</p>
+			<h4>Creating Color schemes</h4>
+			<div class="cs">
+				<div class="cs-1">
+					<img src="https://res.cloudinary.com/nisacodelifings/image/upload/v1620054181/Screenshot_696_wfvhyg.png" alt=""><br><br>
+					<a href="https://github.com/nisacodelifings/GreenFox-Theme" target="_blank"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>GreenFox</a>
+				</div>
+				<div class="cs-2">
+					<img src="https://res.cloudinary.com/nisacodelifings/image/upload/v1620053911/Screenshot_695_hdpvet.png" alt=""><br><br>
+					<a href="https://github.com/nisacodelifings/Dark-Punkie-Theme" target="_blank"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>Dark Punkie</a>
+				</div>
+			</div>
+			<hr>
+			<h4>Making Artworks</h4>
+			<div class="cs">
+				<div class="cs-1">
+					<img src="https://res.cloudinary.com/codelifings/image/upload/v1597480766/IMG-20200815-WA0007_cj1pnn.jpg" alt=""><br><br>
+					<a href="https://res.cloudinary.com/codelifings/image/upload/v1597480766/IMG-20200815-WA0007_cj1pnn.jpg" target="_blank"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>Nature</a>
+				</div>
+				<div class="cs-2">
+					<img src="https://res.cloudinary.com/codelifings/image/upload/v1597480763/IMG-20200815-WA0009_kr3eof.jpg" alt=""><br><br>
+					<a href="https://res.cloudinary.com/codelifings/image/upload/v1597480763/IMG-20200815-WA0009_kr3eof.jpg" target="_blank"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>Human</a>
+				</div>
+			</div>
+			<hr>
+			<h4>Coding User interfaces</h4>
+			<div class="cs">
+				<div class="cs-1">
+					<img src="https://res.cloudinary.com/nisacodelifings/image/upload/v1620628369/Screenshot_715_dyeoge.png" alt=""><br><br>
+					<a href="https://cuddly-chainsaw-pi.vercel.app/" target="_blank"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg> Pitakon
+				</div>
+				<div class="cs-2">
+					<img src="https://res.cloudinary.com/nisacodelifings/image/upload/v1622009974/Screenshot_726_ruo49e.png" alt=""><br><br>
+					<a href="http://dreamsss2.glitch.me/" target="_blank"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>Dreamss</a>
+				</div>
+			</div>
+			<hr>
+			My main focus, is developing CSS User Interface. If you need some help you can ask me by just <a href="https:/wa.me/6289508320163" class="link">whatsapp me, Thank you!</a>
+			<p>and Hey! do you want me to show some more portfolio for you? just stay tuned on codepen.io/nisacodelifings
+		</main>
+	</div>
 </body>
 
 </html>
