@@ -122,7 +122,7 @@ main {
     background: #4A00E0;
     /* fallback for old browsers */
     border-radius: 50px;
-    border-right: 15px solid hotpink;
+    border-right: 1em solid hotpink;
 }
 
 .dekstop{
