@@ -122,8 +122,8 @@ main {
     background: #4A00E0;
     /* fallback for old browsers */
     border-radius: 50px;
-    border-left: 20px solid #9d03fc;
-    border-right: 20px solid hotpink;
+    border-left: 20px solid hotpink;
+    border-right: 15px solid hotpink;
 }
 
 .dekstop{
